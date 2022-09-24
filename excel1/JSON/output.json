@@ -1,0 +1,43 @@
+[ {
+  "name" : "ashwin",
+  "id" : 1001,
+  "phyGrade" : "D",
+  "mathsGrade" : "B2",
+  "chemGrade" : "A2",
+  "phyPoint" : 4.0,
+  "mathsPoint" : 7.0,
+  "chempoint" : 9.0,
+  "phyMark" : 34,
+  "totalMark" : 189,
+  "mathsMark" : 67,
+  "percentage" : 63,
+  "chemMark" : 88
+}, {
+  "name" : "dane",
+  "id" : 10002,
+  "phyGrade" : "E1",
+  "mathsGrade" : "C2",
+  "chemGrade" : "B2",
+  "phyPoint" : 3.0,
+  "mathsPoint" : 5.0,
+  "chempoint" : 7.0,
+  "phyMark" : 23,
+  "totalMark" : 134,
+  "mathsMark" : 45,
+  "percentage" : 44,
+  "chemMark" : 66
+}, {
+  "name" : "alan",
+  "id" : 1009,
+  "phyGrade" : "C2",
+  "mathsGrade" : "E2",
+  "chemGrade" : "B2",
+  "phyPoint" : 5.0,
+  "mathsPoint" : 0.0,
+  "chempoint" : 7.0,
+  "phyMark" : 44,
+  "totalMark" : 113,
+  "mathsMark" : 2,
+  "percentage" : 37,
+  "chemMark" : 67
+} ]
