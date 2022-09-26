@@ -21,7 +21,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 
 public class ExceltoDB {
-	private static final Logger logger = LogManager.getLogger(ReadXLSX.class);
+	private static final Logger logger = LogManager.getLogger(ExceltoDB.class);
 	public static void main(String[] ar) throws IOException, SQLException {
 		BasicConfigurator.configure();
 		File f = new File("student.xlsx");
@@ -37,7 +37,7 @@ public class ExceltoDB {
 			XSSFCell cell4;
 			XSSFCell cell5;
 
-			for (int i = 1; i < rows; i++) {
+			for (int i = 0; i < rows; i++) {
 
 				cell1 = excelSheet.getRow(i).getCell(0);
 				cell2 = excelSheet.getRow(i).getCell(1);
@@ -73,7 +73,7 @@ public class ExceltoDB {
 
 	public static void saveToDB(List<Student> studentlist) throws SQLException {
 
-		String jdbcURL = "jdbc:mysql://localhost:3306/student";
+		String jdbcURL = "jdbc:mysql://localhost:3306/student?useSSL=false";
 		String username = "root";
 		String password = "root";
 		String insertQuery = "INSERT INTO student (id, name, Phymark, PhyGrade, PhyPoint, Mathsmark, MathsGrade, MathsPoint, Chemmark, ChemGrade, Chempoint,Percentage, TotalMark) VALUES (?, ?, ?, ?, ?, ?, ?,?, ?, ?, ?, ?, ?)";
