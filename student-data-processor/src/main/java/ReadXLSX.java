@@ -173,9 +173,7 @@ public class ReadXLSX {
 
 	public static int percentages(int d, int e, int f) {
 
-		int r = sum(d, e, f) * 100 / 300;
-
-		return r;
+		return sum(d, e, f) * 100 / 300;
 
 	}
 
