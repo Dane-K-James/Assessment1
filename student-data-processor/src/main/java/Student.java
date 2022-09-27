@@ -1,16 +1,16 @@
 
 
-import org.apache.poi.xssf.usermodel.XSSFCell;
+
 
 public class Student {
 	private String name;
 	private int id;
-	private int PhyMark;
-	private int MathsMark;
-	private int ChemMark;
+	private int phymark;
+	private int mathsmark;
+	private int chemmark;
 	
-	private int TotalMark ;
-	private int Percentage;
+	private int totalmark ;
+	private int percentage;
 	private String phyGrade;
 	private String mathsGrade;
 	private String chemGrade;
@@ -30,34 +30,34 @@ public class Student {
 		this.id = id;
 	}
 	public int getPhyMark() {
-		return PhyMark;
+		return phymark;
 	}
 	public void setPhyMark(int phyMark) {
-		PhyMark = phyMark;
+		phymark = phyMark;
 	}
 	public int getMathsMark() {
-		return MathsMark;
+		return mathsmark;
 	}
 	public void setMathsMark(int mathsMark) {
-		MathsMark = mathsMark;
+		mathsmark = mathsMark;
 	}
 	public int getChemMark() {
-		return ChemMark;
+		return chemmark;
 	}
 	public void setChemMark(int chemMark) {
-		ChemMark = chemMark;
+		chemmark = chemMark;
 	}
 	public int getTotalMark() {
-		return TotalMark;
+		return totalmark;
 	}
 	public void setTotalMark(int totalMark) {
-		TotalMark = totalMark;
+		totalmark = totalMark;
 	}
 	public int getPercentage() {
-		return Percentage;
+		return percentage;
 	}
 	public void setPercentage(int percentage) {
-		Percentage = percentage;
+		this.percentage = percentage;
 	}
 	public String getPhyGrade() {
 		return phyGrade;
@@ -97,8 +97,8 @@ public class Student {
 	}
 	@Override
 	public String toString() {
-		return "Student [name=" + name + ", id=" + id + ", PhyMark=" + PhyMark + ", MathsMark=" + MathsMark
-				+ ", ChemMark=" + ChemMark + ", TotalMark=" + TotalMark + ", Percentage=" + Percentage + ", phyGrade="
+		return "Student [name=" + name + ", id=" + id + ", phymark=" + phymark + ", mathsmark=" + mathsmark
+				+ ", chemmark=" + chemmark + ", totalmark=" + totalmark + ", percentage=" + percentage + ", phyGrade="
 				+ phyGrade + ", mathsGrade=" + mathsGrade + ", chemGrade=" + chemGrade + ", phyPoint=" + phyPoint
 				+ ", mathsPoint=" + mathsPoint + ", chempoint=" + chempoint + "]";
 	}
